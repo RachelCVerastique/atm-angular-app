@@ -1,0 +1,12 @@
+<div class="select-container">
+  <h1>
+    {{ mode === 'deposit' ? 'Deposit' : 'Withdraw' }} - Select Account
+  </h1>
+
+  <div class="button-group">
+    <button (click)="choose('checking')">Checking</button>
+    <button (click)="choose('savings')">Savings</button>
+  </div>
+
+  <button class="cancel" (click)="cancel()">Cancel</button>
+</div>

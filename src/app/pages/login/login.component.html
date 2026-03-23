@@ -1,0 +1,16 @@
+<div class="login-container">
+  <h1>ATM Login</h1>
+
+  <label for="pin">Enter 4-Digit PIN</label>
+  <input
+    id="pin"
+    type="password"
+    maxlength="4"
+    [(ngModel)]="pin"
+    placeholder="****"
+  />
+
+  <button (click)="submit()">Login</button>
+
+  <p class="message" *ngIf="message">{{ message }}</p>
+</div>
